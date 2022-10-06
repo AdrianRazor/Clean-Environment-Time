@@ -1,0 +1,29 @@
+.btn {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 130%;
+  color: var(--black);
+
+  border: 1px solid var(--green);
+  background-color: var(--white);
+  transition: 0.2s ease;
+
+  width: 224px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: var(--green);
+    transition: 0.2s ease;
+  }
+}
+
+// @media (max-width: 767px) {
+//   .btn {
+//     font-size: 14px;
+//   }
+// }
