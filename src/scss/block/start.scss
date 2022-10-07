@@ -1,0 +1,242 @@
+.start {
+  position: relative;
+  max-width: 1600px;
+  width: 100%;
+  padding: 0 35px;
+  margin: 0 auto;
+
+  &__container {
+    height: 710px;
+    border-radius: 35px;
+    overflow: hidden;
+
+    background-image: url(../img/ukraine-flag.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__title {
+    color: var(--white);
+    margin-top: 70px;
+    margin-bottom: 20px;
+  }
+
+  &__name {
+    font-size: 75px;
+    color: var(--white);
+  }
+
+  &__img {
+    display: none;
+  }
+
+  &__block {
+    padding: 40px 50px;
+    border-radius: 20px;
+    background-color: var(--white);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+
+    position: absolute;
+    bottom: -78px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+  }
+
+  &__tab {
+    width: 300px;
+    padding: 20px 0;
+    border-bottom: 1px solid #777;
+
+    font-weight: 700;
+    color: #777;
+    white-space: nowrap;
+
+    &.active {
+      color: var(--black);
+      border-bottom: 1px solid var(--black);
+    }
+  }
+
+  &__tip {
+    max-width: 430px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: var(--grey);
+
+    display: flex;
+    align-items: center;
+    gap: 0 14px;
+
+    & svg {
+      flex-shrink: 0;
+      fill: #777;
+    }
+  }
+
+  &__bottom,
+  &__donations {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+  }
+
+  &__sum {
+    width: 110px;
+  }
+
+  &__btn {
+    width: 300px;
+  }
+}
+
+@media (max-width: 1399px) {
+  .start {
+    &__block {
+      bottom: -170px;
+    }
+
+    &__top {
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    &__head {
+      margin-bottom: 20px;
+    }
+
+    &__tab {
+      text-align: center;
+      white-space: initial;
+    }
+
+    &__tip {
+      max-width: 600px;
+    }
+
+    &__bottom {
+      flex-direction: column;
+      gap: 20px 0;
+    }
+
+    &__donations {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    &__sum {
+      width: 110px;
+    }
+
+    &__btn {
+      width: 350px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .start {
+    &__tab {
+      width: 175px;
+    }
+
+    &__tip {
+      max-width: 350px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .start {
+    padding: 0;
+
+    &__container {
+      height: initial;
+      background-image: none;
+    }
+
+    &__title {
+      color: var(--black);
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+
+    &__name {
+      font-size: 44px;
+      color: var(--black);
+      margin-bottom: 20px;
+    }
+
+    &__img {
+      display: block;
+      height: 216px;
+      border-radius: 15px;
+      overflow: hidden;
+    }
+
+    &__block {
+      padding: 30px 20px;
+      bottom: -306px;
+    }
+
+    &__tab {
+      width: 142px;
+      padding: 0 10px 10px 10px;
+      font-size: 14px;
+    }
+
+    &__tip {
+      max-width: 285px;
+    }
+
+    &__desc {
+      font-size: 12px;
+    }
+
+    &__bottom {
+      gap: 30px 0;
+    }
+
+    &__sum {
+      height: 40px;
+      font-size: 12px;
+      width: 88px;
+    }
+
+    &__btn {
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 374px) {
+  .start {
+    &__block {
+      padding: 25px 15px;
+    }
+
+    &__tab {
+      width: 120px;
+    }
+
+    &__sum {
+      width: 68px;
+    }
+  }
+}
