@@ -56,10 +56,10 @@
   &__tab {
     width: 300px;
     padding: 20px 0;
-    border-bottom: 1px solid #777;
+    border-bottom: 1px solid var(--grey);
 
     font-weight: 700;
-    color: #777;
+    color: var(--grey);
     white-space: nowrap;
 
     &.active {
@@ -72,7 +72,7 @@
     max-width: 430px;
     padding: 15px;
     border-radius: 10px;
-    background-color: var(--grey);
+    background-color: var(--light-grey);
 
     display: flex;
     align-items: center;
@@ -80,7 +80,7 @@
 
     & svg {
       flex-shrink: 0;
-      fill: #777;
+      fill: var(--grey);
     }
   }
 

@@ -1,2 +1,159 @@
 .scope {
+  padding-top: 180px;
+  padding-bottom: 180px;
+
+  &__title {
+    margin-bottom: 60px;
+  }
+
+  &__body {
+    display: flex;
+    gap: 0 30px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px 0;
+  }
+
+  &__head {
+    max-width: 406px;
+    width: 100%;
+    height: 84px;
+    padding: 0 30px;
+    background-color: var(--light-grey);
+    transition: 0.3s ease;
+    border-radius: 15px;
+
+    display: flex;
+    align-items: center;
+
+    & svg {
+      display: none;
+      flex-shrink: 0;
+      fill: var(--grey);
+    }
+  }
+
+  &__item {
+    cursor: pointer;
+
+    &.active,
+    &:hover {
+      & .scope__head {
+        background-color: var(--green);
+        transition: 0.3s ease;
+
+        & p {
+          color: var(--white);
+          transition: 0.3s ease;
+        }
+      }
+
+      & svg {
+        fill: var(--white);
+      }
+    }
+
+    &.active svg {
+      transform: rotate(180deg);
+      transition: 0.3s ease;
+    }
+  }
+
+  &__name {
+    transition: 0.3s ease;
+  }
+
+  &__card {
+    max-width: 735px;
+    padding: 30px;
+
+    &--mobile {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .scope {
+    &__name {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .scope {
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    &__title {
+      margin-bottom: 30px;
+    }
+
+    &__body {
+      gap: 0;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      &:not(:last-of-type) {
+        margin-bottom: 11px;
+      }
+
+      &.active {
+        margin-bottom: 0;
+
+        & .scope__head {
+          margin-bottom: 11px;
+        }
+
+        & .scope__card {
+          max-height: 1000px;
+          padding: 20px 20px 30px;
+          margin-bottom: 21px;
+        }
+      }
+    }
+
+    &__head {
+      max-width: 100%;
+      height: 73px;
+      padding: 0 20px;
+      border-radius: 10px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0 20px;
+
+      & svg {
+        display: initial;
+      }
+    }
+
+    &__card {
+      max-height: 0;
+      padding: 0 20px;
+      overflow: hidden;
+
+      &--mobile {
+        display: initial;
+      }
+    }
+
+    &__right {
+      display: none;
+    }
+  }
 }
