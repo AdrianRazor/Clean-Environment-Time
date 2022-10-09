@@ -2,6 +2,10 @@
   padding-top: 180px;
   padding-bottom: 180px;
 
+  &__container {
+    position: relative;
+  }
+
   &__head {
     display: flex;
     align-items: center;
@@ -27,6 +31,7 @@
   &__img {
     height: 270px;
     border-radius: 20px;
+    background-color: var(--white);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 
@@ -57,6 +62,17 @@
       grid-column-end: 5;
     }
   }
+
+  &__logo {
+    width: 186px;
+    height: 186px;
+    opacity: 0.1;
+
+    position: absolute;
+    bottom: 200px;
+    left: -90px;
+    z-index: -1;
+  }
 }
 
 @media (max-width: 1279px) {
@@ -71,6 +87,10 @@
   .partner {
     &__img {
       height: 165px;
+    }
+
+    &__logo {
+      display: none;
     }
   }
 }
