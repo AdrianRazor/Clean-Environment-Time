@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/main.min.css" />
     <title>Час чистого довкілля</title>
   </head>
@@ -343,7 +345,37 @@
       </section>
 
       <section class="gallery">
-        <div class="container"></div>
+        <div class="container swiper swiperGallery">
+          <div class="gallery__head">
+            <h2 class="title">Галерея</h2>
+            <button class="btn gallery__btn">Всі світлини</button>
+          </div>
+
+          <div class="swiper-wrapper gallery__slider">
+            <div class="swiper-slide gallery__photo">
+              <img src="img/gallery-1.jpg" alt="gallery photo" />
+            </div>
+            <div class="swiper-slide gallery__photo">
+              <img src="img/gallery-2.jpg" alt="gallery photo" />
+            </div>
+            <div class="swiper-slide gallery__photo">
+              <img src="img/gallery-3.jpg" alt="gallery photo" />
+            </div>
+            <div class="swiper-slide gallery__photo">
+              <img src="img/gallery-4.jpg" alt="gallery photo" />
+            </div>
+            <div class="swiper-slide gallery__photo">
+              <img src="img/people-2.jpg" alt="gallery photo" />
+            </div>
+            <div class="swiper-slide gallery__photo">
+              <img src="img/people-3.jpg" alt="gallery photo" />
+            </div>
+          </div>
+
+          <div class="gallery__scrollbar">
+            <div class="gallery__scrolldrag"></div>
+          </div>
+        </div>
       </section>
 
       <section class="partner">
@@ -451,6 +483,7 @@
       </div>
     </footer>
 
+    <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

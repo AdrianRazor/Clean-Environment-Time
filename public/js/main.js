@@ -1,1 +1,1 @@
-document.addEventListener("DOMContentLoaded",(function(d){console.log("DOM fully loaded and parsed")}));
+document.addEventListener("DOMContentLoaded",(function(e){document.querySelector(".swiper")&&new Swiper(".swiperGallery",{slidesPerView:1,spaceBetween:15,breakpoints:{481:{slidesPerView:2,spaceBetween:15},1024:{slidesPerView:3,spaceBetween:30}},scrollbar:{el:".gallery__scrollbar",draggable:!0,dragClass:"gallery__scrolldrag"}}),console.log("DOM fully loaded and parsed")}));
