@@ -53,6 +53,7 @@
 
       & svg {
         fill: var(--white);
+        transition: 0.3s ease;
       }
     }
 
@@ -111,22 +112,20 @@
     &__item {
       display: flex;
       flex-direction: column;
+      transition: 0.6s ease;
 
-      &:not(:last-of-type) {
+      &:not(:last-of-type) .scope__head {
         margin-bottom: 11px;
       }
 
       &.active {
-        margin-bottom: 0;
-
-        & .scope__head {
-          margin-bottom: 11px;
-        }
+        transition: 0.6s ease;
 
         & .scope__card {
-          max-height: 1000px;
+          max-height: 800px;
           padding: 20px 20px 30px;
           margin-bottom: 21px;
+          transition: 0.6s ease;
         }
       }
     }
@@ -151,6 +150,7 @@
       max-height: 0;
       padding: 0 20px;
       overflow: hidden;
+      transition: 0.3s ease;
 
       &--mobile {
         display: block;

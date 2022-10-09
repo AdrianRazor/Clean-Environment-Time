@@ -534,6 +534,9 @@ body {
 .scope__item.active svg,
 .scope__item:hover svg {
   fill: var(--white);
+  -webkit-transition: 0.3s ease;
+  -o-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .scope__item.active svg {
@@ -1318,24 +1321,28 @@ body {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    transition: 0.6s ease;
   }
 
-  .scope__item:not(:last-of-type) {
+  .scope__item:not(:last-of-type) .scope__head {
     margin-bottom: 11px;
   }
 
   .scope__item.active {
-    margin-bottom: 0;
-  }
-
-  .scope__item.active .scope__head {
-    margin-bottom: 11px;
+    -webkit-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    transition: 0.6s ease;
   }
 
   .scope__item.active .scope__card {
-    max-height: 1000px;
+    max-height: 800px;
     padding: 20px 20px 30px;
     margin-bottom: 21px;
+    -webkit-transition: 0.6s ease;
+    -o-transition: 0.6s ease;
+    transition: 0.6s ease;
   }
 
   .scope__head {
@@ -1363,6 +1370,9 @@ body {
     max-height: 0;
     padding: 0 20px;
     overflow: hidden;
+    -webkit-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+    transition: 0.3s ease;
   }
 
   .scope__card--mobile {

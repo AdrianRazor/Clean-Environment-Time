@@ -1,4 +1,29 @@
 document.addEventListener("DOMContentLoaded", function (event) {
+  const tabItem = document.querySelectorAll(".scope__item");
+  const tabContent = document.querySelectorAll(".scope__right .scope__card");
+
+  if (window.innerWidth >= 768 && tabItem) {
+    tabItem.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        tabItem.forEach((el) => el.classList.remove("active"));
+        tabItem[index].classList.add("active");
+
+        tabContent.forEach((el) => el.classList.remove("active"));
+        tabContent[index].classList.add("active");
+      });
+    });
+  }
+
+  if (window.innerWidth < 768 && tabItem) {
+    tabItem.forEach((item, index) => {
+      item.classList.remove("active");
+
+      item.addEventListener("click", () => {
+        tabItem[index].classList.toggle("active");
+      });
+    });
+  }
+
   if (document.querySelector(".swiper")) {
     const swiperGallery = new Swiper(".swiperGallery", {
       slidesPerView: 1,
