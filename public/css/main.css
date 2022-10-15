@@ -1039,6 +1039,7 @@ body {
   font-size: 75px;
   line-height: 110%;
   color: var(--black);
+  word-break: break-word;
 }
 
 .promo__container p {
@@ -1129,6 +1130,83 @@ body {
   border-radius: 15px;
   overflow: hidden;
   margin-top: 50px;
+}
+
+.help {
+  padding-top: 100px;
+}
+
+.help__wrapper {
+  position: relative;
+  padding: 140px 0;
+  border-radius: 35px;
+  background-color: var(--light-grey);
+  z-index: -1;
+  overflow: hidden;
+}
+
+.help__title {
+  margin-bottom: 40px;
+}
+
+.help__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0 30px;
+}
+
+.help__img {
+  width: 100%;
+  height: 398px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.help__block {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.help__text + .help__text {
+  margin-top: 46px;
+}
+
+.help__text--width {
+  display: inline-block;
+  max-width: 240px;
+}
+
+.help__phone {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--green);
+  margin-top: 10px;
+}
+
+.help__btn {
+  max-width: 270px;
+}
+
+.help__logo {
+  width: 186px;
+  height: 186px;
+  opacity: 0.1;
+  position: absolute;
+  bottom: 153px;
+  right: 92px;
+  z-index: -1;
 }
 
 .footer {
@@ -1893,6 +1971,46 @@ body {
   .content__img {
     height: 220px;
     margin-top: 20px;
+  }
+
+  .help__wrapper {
+    padding: 60px 20px;
+    border-radius: 15px;
+  }
+
+  .help__title {
+    margin-bottom: 30px;
+  }
+
+  .help__body {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .help__img {
+    height: 213px;
+    border-radius: 10px;
+  }
+
+  .help__text + .help__text {
+    margin-top: 20px;
+  }
+
+  .help__btn {
+    max-width: 305px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .help__logo {
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+    bottom: 100px;
+    right: -20px;
   }
 
   .footer {
