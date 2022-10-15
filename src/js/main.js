@@ -1,4 +1,22 @@
 document.addEventListener("DOMContentLoaded", function (event) {
+  // Дропдаун
+  const dropdown = document.querySelectorAll(".dropdown");
+
+  if (dropdown) {
+    dropdown.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        item.classList.toggle("open");
+
+        window.addEventListener("click", (e) => {
+          if (!e.target.closest(".dropdown")) {
+            item.classList.remove("open");
+          }
+        });
+      });
+    });
+  }
+
+  // Табы
   const tabItem = document.querySelectorAll(".scope__item");
   const tabContent = document.querySelectorAll(".scope__right .scope__card");
 
@@ -14,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+  // Аккордеон
   if (window.innerWidth < 768 && tabItem) {
     tabItem.forEach((item, index) => {
       item.classList.remove("active");
@@ -24,6 +43,7 @@ document.addEventListener("DOMContentLoaded", function (event) {
     });
   }
 
+  // Слайдер
   if (document.querySelector(".swiper")) {
     const swiperGallery = new Swiper(".swiperGallery", {
       slidesPerView: 1,

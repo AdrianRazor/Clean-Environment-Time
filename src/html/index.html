@@ -18,7 +18,67 @@
           <img src="img/logo-min.svg" class="logo__mobile" alt="logo" />
         </a>
         <button class="header__language">ukr</button>
-        <button class="btn header__btn">Підтримати фонд</button>
+        <div class="dropdown header__dropdown">
+          <div class="dropdown__head">
+            <p>Про нас</p>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </div>
+          <div class="dropdown__body">
+            <ul class="dropdown__list">
+              <li>
+                <a href="#">Засновники</a>
+              </li>
+              <li>
+                <a href="#">Наша команда</a>
+              </li>
+              <li>
+                <a href="#">Наші партнери</a>
+              </li>
+              <li>
+                <a href="#">Звіти</a>
+              </li>
+              <li>
+                <a href="#">Документи</a>
+              </li>
+              <li>
+                <a href="#">Контакти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="dropdown header__dropdown">
+          <div class="dropdown__head">
+            <p>Що ми робимо</p>
+            <svg width="15" height="15">
+              <use xlink:href="img/sprite.svg#arrow"></use>
+            </svg>
+          </div>
+          <div class="dropdown__body">
+            <ul class="dropdown__list">
+              <li>
+                <a href="#">Програми охорони здоров’я</a>
+              </li>
+              <li>
+                <a href="#">Робота з дітьми, молоддю та сім’ями</a>
+              </li>
+              <li>
+                <a href="#">Допомога людям з інвалідністю</a>
+              </li>
+              <li>
+                <a href="#">Гуматінарні програми</a>
+              </li>
+              <li>
+                <a href="#">Розбудова громад</a>
+              </li>
+              <li>
+                <a href="#">Благодійні акції</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a href="#" class="btn header__btn">Підтримати фонд</a>
         <button class="burger"></button>
       </div>
     </header>
@@ -32,32 +92,33 @@
             <div class="start__img">
               <img src="img/ukraine-flag.jpg" alt="ukraine flag" />
             </div>
-            <div class="start__block">
-              <div class="start__top">
-                <ul class="start__head">
-                  <li class="text-1 start__tab active">Разова допомога</li>
-                  <li class="text-1 start__tab">Щомісячна допомога</li>
+
+            <div class="fund">
+              <div class="fund__top">
+                <ul class="fund__head">
+                  <li class="text-1 fund__tab active">Разова допомога</li>
+                  <li class="text-1 fund__tab">Щомісячна допомога</li>
                 </ul>
-                <div class="start__tip">
+                <div class="fund__tip">
                   <svg width="30" height="26">
                     <use xlink:href="img/sprite.svg#heart"></use>
                   </svg>
-                  <p class="text-2 start__desc">
+                  <p class="text-2 fund__desc">
                     Ваші пожертвування допоможуть українцям вийти зі скрутної
                     ситуації в житті
                   </p>
                 </div>
               </div>
-              <div class="start__bottom">
-                <div class="start__donations">
-                  <button class="btn start__sum">50 &#8372;</button>
-                  <button class="btn start__sum">100 &#8372;</button>
-                  <button class="btn start__sum">200 &#8372;</button>
-                  <button class="btn start__sum">500 &#8372;</button>
-                  <button class="btn start__sum">1000 &#8372;</button>
-                  <button class="btn start__sum">інша сума</button>
+              <div class="fund__bottom">
+                <div class="fund__donations">
+                  <button class="btn fund__sum">50 &#8372;</button>
+                  <button class="btn fund__sum">100 &#8372;</button>
+                  <button class="btn fund__sum">200 &#8372;</button>
+                  <button class="btn fund__sum">500 &#8372;</button>
+                  <button class="btn fund__sum">1000 &#8372;</button>
+                  <button class="btn fund__sum">інша сума</button>
                 </div>
-                <button class="btn btn--black start__btn">
+                <button class="btn btn--black fund__btn">
                   Підтримати фонд
                 </button>
               </div>
