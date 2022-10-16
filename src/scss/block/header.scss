@@ -1,7 +1,6 @@
 .header {
   position: relative;
   padding: 18px 0;
-  overflow: hidden;
 
   &__container {
     max-width: 1270px;
@@ -67,6 +66,7 @@
     &.open {
       height: 100vh;
       padding: 20px 15px 30px;
+      overflow: hidden;
 
       & .header__container {
         display: flex;
