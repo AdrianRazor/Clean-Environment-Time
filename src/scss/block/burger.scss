@@ -1,0 +1,107 @@
+.burger {
+  display: none;
+
+  width: 27px;
+  height: 20px;
+  position: relative;
+  z-index: 20;
+  background-color: transparent;
+  flex-shrink: 0;
+
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+
+  &__top,
+  &__middle,
+  &__bottom {
+    display: block;
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background-color: var(--black);
+    border-radius: 3px;
+    opacity: 1;
+    left: 0;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+  }
+
+  &__top {
+    top: 0px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+
+  &__middle {
+    top: 9px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+
+  &__bottom {
+    top: 18px;
+    -webkit-transform-origin: left center;
+    -moz-transform-origin: left center;
+    -o-transform-origin: left center;
+    transform-origin: left center;
+  }
+
+  &--white .burger__top,
+  &--white .burger__middle,
+  &--white .burger__bottom {
+    background-color: var(--white);
+    transition: 0.25s ease-in-out;
+  }
+
+  &.open {
+    & .burger__top {
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      top: 0;
+      left: 4px;
+      background-color: var(--black);
+      transition: 0.25s ease-in-out;
+    }
+
+    & .burger__middle {
+      width: 0%;
+      opacity: 0;
+      transition: 0.25s ease-in-out;
+    }
+
+    & .burger__bottom {
+      -webkit-transform: rotate(-45deg);
+      -moz-transform: rotate(-45deg);
+      -o-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      top: 19px;
+      left: 4px;
+      background-color: var(--black);
+      transition: 0.25s ease-in-out;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .burger {
+    display: block;
+  }
+}

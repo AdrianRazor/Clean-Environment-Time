@@ -12,14 +12,19 @@
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
-      line-height: 130%;
       color: var(--black);
       transition: 0.2s ease;
     }
 
     & svg {
+      flex-shrink: 0;
       fill: var(--black);
       transition: 0.2s ease;
+    }
+
+    & img {
+      width: 13px;
+      height: 13px;
     }
 
     &:hover {
@@ -55,20 +60,32 @@
     flex-direction: column;
     gap: 15px 0;
 
+    & li,
     & li a {
       display: block;
       font-family: inherit;
       font-style: normal;
       font-weight: 500;
       font-size: 14px;
-      line-height: 130%;
       color: var(--black);
       transition: 0.2s ease;
       white-space: nowrap;
+      cursor: pointer;
 
       &:hover {
         color: var(--green);
         transition: 0.2s ease;
+      }
+    }
+
+    & li {
+      display: flex;
+      align-items: center;
+      gap: 0 10px;
+
+      & img {
+        width: 18px;
+        height: 18px;
       }
     }
   }

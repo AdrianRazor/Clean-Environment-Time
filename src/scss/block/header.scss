@@ -1,35 +1,30 @@
 .header {
-  padding: 20px 0;
+  position: relative;
+  padding: 18px 0;
+  overflow: hidden;
 
   &__container {
     max-width: 1270px;
+  }
+
+  &__head {
     display: flex;
     align-items: center;
     gap: 0 50px;
   }
 
   &__language {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    background-color: var(--light-grey);
+    & .dropdown__head {
+      gap: 0 3px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-
-    font-family: inherit;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 10px;
-    line-height: 130%;
-    color: var(--black);
-    text-transform: uppercase;
+      & p {
+        font-size: 10px;
+      }
+    }
   }
 
   &__dropdown {
-    &:first-of-type {
+    &:nth-of-type(2) {
       margin-left: auto;
     }
   }
@@ -37,22 +32,98 @@
   &__btn {
     width: 224px;
   }
+
+  &__body {
+    display: none;
+  }
+
+  &__logo {
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
   .header {
     padding: 20px 15px;
 
-    &__language {
-      display: none;
-      width: 40px;
-      height: 40px;
-      font-weight: 700;
-      font-size: 12px;
+    &__head {
+      justify-content: space-between;
+      gap: 0 17px;
+
+      & .header__language {
+        display: none;
+      }
+
+      & .header__dropdown {
+        display: none;
+      }
     }
 
-    &__dropdown {
-      display: none;
+    &__btn {
+      max-width: 245px;
+      width: 100%;
+    }
+
+    &.open {
+      height: 100vh;
+      padding: 20px 15px 30px;
+
+      & .header__container {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      }
+
+      & .header__head {
+        & .header__btn {
+          display: none;
+        }
+
+        & .header__language {
+          display: block;
+        }
+      }
+
+      & .header__body {
+        padding-top: 100px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-grow: 1;
+        gap: 50px 0;
+
+        & .header__dropdown .dropdown__head p,
+        & a {
+          font-size: 20px;
+        }
+
+        & .header__dropdown:nth-of-type(2) {
+          margin-left: 0;
+        }
+
+        & .header__btn {
+          max-width: 285px;
+          width: 100%;
+          margin: auto auto 0;
+
+          font-size: 14px;
+        }
+      }
+
+      & .header__logo {
+        display: block;
+
+        width: 240px;
+        height: 240px;
+        opacity: 0.1;
+        transform: rotate(15deg);
+
+        position: absolute;
+        top: 50%;
+        right: -50px;
+        z-index: -1;
+      }
     }
   }
 }

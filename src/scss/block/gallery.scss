@@ -18,25 +18,13 @@
   }
 
   &__photo {
+    max-height: 487px;
     border-radius: 20px;
     overflow: hidden;
 
     & img {
       object-position: center;
     }
-  }
-
-  &__scrollbar {
-    height: 4px;
-    background-color: var(--light-grey);
-    margin-top: 30px;
-    cursor: pointer;
-  }
-
-  &__scrolldrag {
-    height: 4px;
-    border-radius: 4px;
-    background-color: var(--green);
   }
 }
 

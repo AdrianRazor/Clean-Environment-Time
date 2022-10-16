@@ -13,73 +13,170 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a href="index.html" class="logo">
-          <img src="img/logo.svg" class="logo__desktop" alt="logo" />
-          <img src="img/logo-min.svg" class="logo__mobile" alt="logo" />
-        </a>
-        <button class="header__language">ukr</button>
-        <div class="dropdown header__dropdown">
-          <div class="dropdown__head">
-            <p>Про нас</p>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#arrow"></use>
-            </svg>
+        <div class="header__head">
+          <a href="index.html" class="logo">
+            <img src="img/logo.svg" class="logo__desktop" alt="logo" />
+            <img src="img/logo-min.svg" class="logo__mobile" alt="logo" />
+          </a>
+          <div class="dropdown header__language">
+            <div class="dropdown__head">
+              <img src="img/flag-ukraine.svg" alt="flag" />
+              <p>УКР</p>
+              <svg width="13" height="13">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="dropdown__body">
+              <ul class="dropdown__list">
+                <li>
+                  <img src="img/flag-ukraine.svg" alt="flag" />
+                  УКР
+                </li>
+                <li>
+                  <img src="img/flag-gb.svg" alt="flag" />
+                  ENG
+                </li>
+                <li>
+                  <img src="img/flag-poland.svg" alt="flag" />
+                  PL
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="dropdown__body">
-            <ul class="dropdown__list">
-              <li>
-                <a href="#">Засновники</a>
-              </li>
-              <li>
-                <a href="#">Наша команда</a>
-              </li>
-              <li>
-                <a href="#">Наші партнери</a>
-              </li>
-              <li>
-                <a href="#">Звіти</a>
-              </li>
-              <li>
-                <a href="#">Документи</a>
-              </li>
-              <li>
-                <a href="#">Контакти</a>
-              </li>
-            </ul>
+          <div class="dropdown header__dropdown">
+            <div class="dropdown__head">
+              <p>Про нас</p>
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="dropdown__body">
+              <ul class="dropdown__list">
+                <li>
+                  <a href="#">Засновники</a>
+                </li>
+                <li>
+                  <a href="#">Наша команда</a>
+                </li>
+                <li>
+                  <a href="#">Наші партнери</a>
+                </li>
+                <li>
+                  <a href="#">Звіти</a>
+                </li>
+                <li>
+                  <a href="#">Документи</a>
+                </li>
+                <li>
+                  <a href="#">Контакти</a>
+                </li>
+              </ul>
+            </div>
           </div>
+          <div class="dropdown header__dropdown">
+            <div class="dropdown__head">
+              <p>Що ми робимо</p>
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="dropdown__body">
+              <ul class="dropdown__list">
+                <li>
+                  <a href="#">Програми охорони здоров’я</a>
+                </li>
+                <li>
+                  <a href="#">Робота з дітьми, молоддю та сім’ями</a>
+                </li>
+                <li>
+                  <a href="#">Допомога людям з інвалідністю</a>
+                </li>
+                <li>
+                  <a href="#">Гуматінарні програми</a>
+                </li>
+                <li>
+                  <a href="#">Розбудова громад</a>
+                </li>
+                <li>
+                  <a href="#">Благодійні акції</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="btn header__btn">Підтримати фонд</a>
+          <button class="burger">
+            <span class="burger__top"></span>
+            <span class="burger__middle"></span>
+            <span class="burger__bottom"></span>
+          </button>
         </div>
-        <div class="dropdown header__dropdown">
-          <div class="dropdown__head">
-            <p>Що ми робимо</p>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#arrow"></use>
-            </svg>
+        <div class="header__body">
+          <a href="index.html">Головна</a>
+          <div class="dropdown header__dropdown">
+            <div class="dropdown__head">
+              <p>Про нас</p>
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="dropdown__body">
+              <ul class="dropdown__list">
+                <li>
+                  <a href="#">Засновники</a>
+                </li>
+                <li>
+                  <a href="#">Наша команда</a>
+                </li>
+                <li>
+                  <a href="#">Наші партнери</a>
+                </li>
+                <li>
+                  <a href="#">Звіти</a>
+                </li>
+                <li>
+                  <a href="#">Документи</a>
+                </li>
+                <li>
+                  <a href="#">Контакти</a>
+                </li>
+              </ul>
+            </div>
           </div>
-          <div class="dropdown__body">
-            <ul class="dropdown__list">
-              <li>
-                <a href="#">Програми охорони здоров’я</a>
-              </li>
-              <li>
-                <a href="#">Робота з дітьми, молоддю та сім’ями</a>
-              </li>
-              <li>
-                <a href="#">Допомога людям з інвалідністю</a>
-              </li>
-              <li>
-                <a href="#">Гуматінарні програми</a>
-              </li>
-              <li>
-                <a href="#">Розбудова громад</a>
-              </li>
-              <li>
-                <a href="#">Благодійні акції</a>
-              </li>
-            </ul>
+          <div class="dropdown header__dropdown">
+            <div class="dropdown__head">
+              <p>Що ми робимо</p>
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="dropdown__body">
+              <ul class="dropdown__list">
+                <li>
+                  <a href="#">Програми охорони здоров’я</a>
+                </li>
+                <li>
+                  <a href="#">Робота з дітьми, молоддю та сім’ями</a>
+                </li>
+                <li>
+                  <a href="#">Допомога людям з інвалідністю</a>
+                </li>
+                <li>
+                  <a href="#">Гуматінарні програми</a>
+                </li>
+                <li>
+                  <a href="#">Розбудова громад</a>
+                </li>
+                <li>
+                  <a href="#">Благодійні акції</a>
+                </li>
+              </ul>
+            </div>
           </div>
+          <a href="#" class="btn btn--black header__btn">Підтримати фонд</a>
         </div>
-        <a href="#" class="btn header__btn">Підтримати фонд</a>
-        <button class="burger"></button>
+      </div>
+      <div class="header__logo">
+        <img src="img/logo-min.svg" alt="logo" />
       </div>
     </header>
 

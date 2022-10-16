@@ -1,11 +1,41 @@
 document.addEventListener("DOMContentLoaded", function (event) {
+  //Бургер
+  let header = document.querySelector(".header");
+  let burger = document.querySelector(".burger");
+
+  if (burger) {
+    const rootElement = document.documentElement;
+
+    burger.addEventListener("click", function () {
+      header.classList.toggle("open");
+      burger.classList.toggle("open");
+      rootElement.classList.toggle("block");
+
+      let headerOpen = document.querySelector(".header.open");
+
+      if (headerOpen) {
+        let navItem = headerOpen.querySelectorAll(".header.open .nav__item");
+
+        navItem.forEach((item) => {
+          item.addEventListener("click", function () {
+            header.classList.remove("open");
+            burger.classList.remove("open");
+            rootElement.classList.remove("block");
+          });
+        });
+      }
+    });
+  }
+
   // Дропдаун
   const dropdown = document.querySelectorAll(".dropdown");
 
   if (dropdown) {
     dropdown.forEach((item, index) => {
       item.addEventListener("click", () => {
-        item.classList.toggle("open");
+        dropdown.forEach((el) => el.classList.remove("open"));
+
+        item.classList.add("open");
 
         window.addEventListener("click", (e) => {
           if (!e.target.closest(".dropdown")) {
@@ -62,9 +92,37 @@ document.addEventListener("DOMContentLoaded", function (event) {
       },
 
       scrollbar: {
-        el: ".gallery__scrollbar",
+        el: ".scrollbar",
         draggable: true,
-        dragClass: "gallery__scrolldrag",
+        dragClass: "scrollbar__drag",
+      },
+    });
+
+    const swiperDocs = new Swiper(".swiperDocs", {
+      slidesPerView: 1,
+      spaceBetween: 15,
+
+      breakpoints: {
+        481: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+
+        768: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 30,
+        },
+      },
+
+      scrollbar: {
+        el: ".scrollbar",
+        draggable: true,
+        dragClass: "scrollbar__drag",
       },
     });
   }
