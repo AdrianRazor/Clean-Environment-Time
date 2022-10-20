@@ -50,28 +50,43 @@ document.addEventListener("DOMContentLoaded", function (event) {
   }
 
   // Табы
-  const tabItem = document.querySelectorAll(".scope__item");
-  const tabContent = document.querySelectorAll(".scope__right .scope__card");
+  // Стартовая секция
+  const tabFundItem = document.querySelectorAll(".fund__tab");
 
-  if (window.innerWidth >= 768 && tabItem) {
-    tabItem.forEach((item, index) => {
+  if (tabFundItem) {
+    tabFundItem.forEach((item) => {
       item.addEventListener("click", () => {
-        tabItem.forEach((el) => el.classList.remove("active"));
-        tabItem[index].classList.add("active");
+        tabFundItem.forEach((el) => el.classList.remove("active"));
+        item.classList.add("active");
+      });
+    });
+  }
 
-        tabContent.forEach((el) => el.classList.remove("active"));
-        tabContent[index].classList.add("active");
+  // Секция "Сфери діяльності фонду"
+  const tabScopeItem = document.querySelectorAll(".scope__item");
+  const tabScopeContent = document.querySelectorAll(
+    ".scope__right .scope__card"
+  );
+
+  if (window.innerWidth >= 768 && tabScopeItem) {
+    tabScopeItem.forEach((item, index) => {
+      item.addEventListener("click", () => {
+        tabScopeItem.forEach((el) => el.classList.remove("active"));
+        tabScopeItem[index].classList.add("active");
+
+        tabScopeContent.forEach((el) => el.classList.remove("active"));
+        tabScopeContent[index].classList.add("active");
       });
     });
   }
 
   // Аккордеон
-  if (window.innerWidth < 768 && tabItem) {
-    tabItem.forEach((item, index) => {
+  if (window.innerWidth < 768 && tabScopeItem) {
+    tabScopeItem.forEach((item, index) => {
       item.classList.remove("active");
 
       item.addEventListener("click", () => {
-        tabItem[index].classList.toggle("active");
+        tabScopeItem[index].classList.toggle("active");
       });
     });
   }
