@@ -33,9 +33,12 @@ document.addEventListener("DOMContentLoaded", function (event) {
   if (dropdown) {
     dropdown.forEach((item, index) => {
       item.addEventListener("click", () => {
-        dropdown.forEach((el) => el.classList.remove("open"));
-
-        item.classList.add("open");
+        if (!item.classList.contains("open")) {
+          dropdown.forEach((el) => el.classList.remove("open"));
+          item.classList.add("open");
+        } else {
+          item.classList.toggle("open");
+        }
 
         window.addEventListener("click", (e) => {
           if (!e.target.closest(".dropdown")) {
