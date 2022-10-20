@@ -15,9 +15,14 @@
   }
 
   &__body {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
+  }
+
+  &__card {
+    flex-basis: 31%;
+    flex-grow: 1;
   }
 
   &__logo {
@@ -84,8 +89,11 @@
     }
 
     &__body {
-      grid-template-columns: initial;
       gap: 30px;
+    }
+
+    &__card {
+      flex-basis: initial;
     }
 
     &__logo {

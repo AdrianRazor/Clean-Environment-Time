@@ -1263,9 +1263,20 @@ body {
 }
 
 .content__body {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 30px;
+}
+
+.content__card {
+  -ms-flex-preferred-size: 31%;
+  flex-basis: 31%;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .content__logo {
@@ -2325,8 +2336,12 @@ body {
   }
 
   .content__body {
-    grid-template-columns: initial;
     gap: 30px;
+  }
+
+  .content__card {
+    -ms-flex-preferred-size: initial;
+    flex-basis: initial;
   }
 
   .content__logo {
