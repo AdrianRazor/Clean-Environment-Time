@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/main.min.css" />
+    <title>Час чистого довкілля</title>
+  </head>
+
+  <body>
+    <header class="header">
+      <div class="container header__container">
+        <div class="header__head">
+          <a href="index.html" class="logo">
+            <img src="img/logo.svg" class="logo__desktop" alt="logo" />
+            <img src="img/logo-min.svg" class="logo__mobile" alt="logo" />
+          </a>
+          <div class="dropdown dropdown--lang header__lang">
+            <div class="dropdown__head">
+              <img src="img/flag-ukraine.svg" alt="flag" />
+              <p>УКР</p>
+              <svg width="13" height="13">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="dropdown__body">
+              <ul class="dropdown__list">
+                <li>
+                  <img src="img/flag-ukraine.svg" alt="flag" />
+                  УКР
+                </li>
+                <li>
+                  <img src="img/flag-england.svg" alt="flag" />
+                  ENG
+                </li>
+                <li>
+                  <img src="img/flag-poland.svg" alt="flag" />
+                  POL
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropdown header__dropdown">
+            <div class="dropdown__head">
+              <p>Про нас</p>
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="dropdown__body">
+              <ul class="dropdown__list">
+                <li>
+                  <a href="#">Засновники</a>
+                </li>
+                <li>
+                  <a href="#">Наша команда</a>
+                </li>
+                <li>
+                  <a href="#">Наші партнери</a>
+                </li>
+                <li>
+                  <a href="#">Звіти</a>
+                </li>
+                <li>
+                  <a href="#">Документи</a>
+                </li>
+                <li>
+                  <a href="#">Контакти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropdown header__dropdown">
+            <div class="dropdown__head">
+              <p>Що ми робимо</p>
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="dropdown__body">
+              <ul class="dropdown__list">
+                <li>
+                  <a href="#">Програми охорони здоров’я</a>
+                </li>
+                <li>
+                  <a href="#">Робота з дітьми, молоддю та сім’ями</a>
+                </li>
+                <li>
+                  <a href="#">Допомога людям з інвалідністю</a>
+                </li>
+                <li>
+                  <a href="#">Гуматінарні програми</a>
+                </li>
+                <li>
+                  <a href="#">Розбудова громад</a>
+                </li>
+                <li>
+                  <a href="#">Благодійні акції</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="btn header__btn">Підтримати фонд</a>
+          <button class="burger">
+            <span class="burger__top"></span>
+            <span class="burger__middle"></span>
+            <span class="burger__bottom"></span>
+          </button>
+        </div>
+        <div class="header__body">
+          <a href="index.html" class="header__link">Головна</a>
+          <div class="dropdown header__dropdown">
+            <div class="dropdown__head">
+              <p>Про нас</p>
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="dropdown__body">
+              <ul class="dropdown__list">
+                <li>
+                  <a href="#">Засновники</a>
+                </li>
+                <li>
+                  <a href="#">Наша команда</a>
+                </li>
+                <li>
+                  <a href="#">Наші партнери</a>
+                </li>
+                <li>
+                  <a href="#">Звіти</a>
+                </li>
+                <li>
+                  <a href="#">Документи</a>
+                </li>
+                <li>
+                  <a href="#">Контакти</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="dropdown header__dropdown">
+            <div class="dropdown__head">
+              <p>Що ми робимо</p>
+              <svg width="15" height="15">
+                <use xlink:href="img/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="dropdown__body">
+              <ul class="dropdown__list">
+                <li>
+                  <a href="#">Програми охорони здоров’я</a>
+                </li>
+                <li>
+                  <a href="#">Робота з дітьми, молоддю та сім’ями</a>
+                </li>
+                <li>
+                  <a href="#">Допомога людям з інвалідністю</a>
+                </li>
+                <li>
+                  <a href="#">Гуматінарні програми</a>
+                </li>
+                <li>
+                  <a href="#">Розбудова громад</a>
+                </li>
+                <li>
+                  <a href="#">Благодійні акції</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <a href="#" class="btn btn--black header__btn">Підтримати фонд</a>
+        </div>
+      </div>
+      <div class="header__logo">
+        <img src="img/logo-min.svg" alt="logo" />
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="start">
+        <div class="start__wrapper">
+          <div class="container">
+            <h2 class="title start__title">Всеукраїнський благодійний фонд</h2>
+            <h1 class="title start__name">«Час чистого довкілля»</h1>
+            <div class="start__img">
+              <img src="img/ukraine-flag.jpg" alt="ukraine flag" />
+            </div>
+
+            <div class="fund">
+              <div class="fund__top">
+                <ul class="fund__head">
+                  <li class="text-1 fund__tab active">Разова допомога</li>
+                  <li class="text-1 fund__tab">Щомісячна допомога</li>
+                </ul>
+                <div class="fund__tip">
+                  <svg width="30" height="26">
+                    <use xlink:href="img/sprite.svg#heart"></use>
+                  </svg>
+                  <p class="text-2 fund__desc">
+                    Ваші пожертвування допоможуть українцям вийти зі скрутної
+                    ситуації в житті
+                  </p>
+                </div>
+              </div>
+              <div class="fund__bottom">
+                <div class="fund__donations">
+                  <button class="btn fund__sum">50 &#8372;</button>
+                  <button class="btn fund__sum">100 &#8372;</button>
+                  <button class="btn fund__sum">200 &#8372;</button>
+                  <button class="btn fund__sum">500 &#8372;</button>
+                  <button class="btn fund__sum">1000 &#8372;</button>
+                  <button class="btn fund__sum">інша сума</button>
+                </div>
+                <button class="btn btn--black fund__btn">
+                  Підтримати фонд
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="mission">
+        <div class="container mission__container">
+          <div class="mission__left">
+            <h2 class="title mission__title">Місія фонду</h2>
+            <p class="text-1 mission__text">
+              Благодійність та волонтерство, становлення відповідального і
+              толерантного суспільства в Україні та допомога тим, хто найбільш
+              цього потребує.
+            </p>
+            <a href="#" class="btn mission__btn">Наша команда</a>
+          </div>
+          <div class="mission__right">
+            <div class="mission__img mission__img--small">
+              <img src="img/people-2.jpg" alt="people" />
+            </div>
+            <div class="mission__img">
+              <img src="img/people.jpg" alt="people" />
+            </div>
+          </div>
+          <div class="mission__logo">
+            <img src="img/logo-min.svg" alt="logo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="scope">
+        <div class="container scope__container">
+          <h2 class="title scope__title">Сфери діяльності фонду</h2>
+          <div class="scope__body">
+            <ul class="scope__list">
+              <li class="scope__item active">
+                <div class="scope__head">
+                  <p class="text-1 scope__name">Програми охорони здоров’я</p>
+                  <svg width="20" height="21">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+                <div class="card card--scope scope__card scope__card--mobile">
+                  <div class="card__img">
+                    <img src="img/doctor.jpg" alt="doctor" />
+                  </div>
+                  <div class="card__text">
+                    <h3>Програми охорони здоров’я</h3>
+                    <p>
+                      Ми допомогаємо літнім людям адаптуватися для реалій життя
+                      під час війни. Для цього ми надаємо грошову допомоги для
+                      отримання медичних послуг та ваучери, для обміну на
+                      медикаменти в аптеках.
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn--black card__btn">Детальніше</a>
+                </div>
+              </li>
+              <li class="scope__item">
+                <div class="scope__head">
+                  <p class="text-1 scope__name">
+                    Робота з дітьми, молоддю та сім’ями
+                  </p>
+                  <svg width="20" height="21">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+                <div class="card card--scope scope__card scope__card--mobile">
+                  <div class="card__img">
+                    <img src="img/scope-2.jpg" alt="people" />
+                  </div>
+                  <div class="card__text">
+                    <h3>Робота з дітьми, молоддю та сім’ями</h3>
+                    <p>
+                      Надаємо дітям доступ до безпечного, інклюзивного та
+                      сприятливого середовища й необхідних послуг для розвитку
+                      та навчання. Ми допомогаємо маленьким українцям сформуюти
+                      ставлення, поведінку та фізичне й психічне благополуччя.
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn--black card__btn">Детальніше</a>
+                </div>
+              </li>
+              <li class="scope__item">
+                <div class="scope__head">
+                  <p class="text-1 scope__name">
+                    Допомога людям з інвалідністю
+                  </p>
+                  <svg width="20" height="21">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+                <div class="card card--scope scope__card scope__card--mobile">
+                  <div class="card__img">
+                    <img src="img/scope-3.jpg" alt="disabled girl" />
+                  </div>
+                  <h3>Допомога людям з інвалідністю</h3>
+                  <p>
+                    Під опікою нашого фонду знаходяться літні люди з
+                    інвалідністю, які потребують фінансової та моральної опори.
+                    Наш фонд надає їм адресну та соціально-психологічну
+                    підтримку, допомагаючи адаптуватися до реалій сучасного
+                    життя.
+                  </p>
+                  <a href="#" class="btn btn--black card__btn">Детальніше</a>
+                </div>
+              </li>
+              <li class="scope__item">
+                <div class="scope__head">
+                  <p class="text-1 scope__name">Гуманітарні програми</p>
+                  <svg width="20" height="21">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+                <div class="card card--scope scope__card scope__card--mobile">
+                  <div class="card__img">
+                    <img src="img/scope-4.jpg" alt="people" />
+                  </div>
+                  <div class="card__text">
+                    <h3>Гуманітарні програми</h3>
+                    <p>
+                      Наш фонд допомогає переселенцям, учасникам бойових дій,
+                      стихійних лих та постраждалим від війни людям. Ми надаємо
+                      їм готівкові гранти, продуктови, гігієнічні набори та
+                      медикаменти, допомагаємо з працевлаштуванням й
+                      перепідготовкую на інші спеціальності.
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn--black card__btn">Детальніше</a>
+                </div>
+              </li>
+              <li class="scope__item">
+                <div class="scope__head">
+                  <p class="text-1 scope__name">Розбудови громад</p>
+                  <svg width="20" height="21">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+                <div class="card card--scope scope__card scope__card--mobile">
+                  <div class="card__img">
+                    <img src="img/scope-5.jpg" alt="people" />
+                  </div>
+                  <div class="card__text">
+                    <h3>Розбудови громад</h3>
+                    <p>
+                      Фонд сприяє стабілізації та соціальній згуртованості в
+                      українському суспільстві. Для цього ми організовуємо
+                      групові психологічні консультаціїї, групи самодопомоги,
+                      живі бібліотеки, кругли столі та інші види дискусій.
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn--black card__btn">Детальніше</a>
+                </div>
+              </li>
+              <li class="scope__item">
+                <div class="scope__head">
+                  <p class="text-1 scope__name">Благодійні акції</p>
+                  <svg width="20" height="21">
+                    <use xlink:href="img/sprite.svg#arrow"></use>
+                  </svg>
+                </div>
+                <div class="card card--scope scope__card scope__card--mobile">
+                  <div class="card__img">
+                    <img src="img/scope-6.jpg" alt="hold money" />
+                  </div>
+                  <div class="card__text">
+                    <h3>Благодійні акції</h3>
+                    <p>
+                      Ми допомогаємо привернути увагу суспільства до проблем
+                      окремих груп населення, збираємо кошти для потреб дітей,
+                      літніх людей та тим, кому потрібна фінансова чи моральна
+                      допомога.
+                    </p>
+                  </div>
+                  <a href="#" class="btn btn--black card__btn">Детальніше</a>
+                </div>
+              </li>
+            </ul>
+            <ul class="scope__right">
+              <li class="card card--scope scope__card active">
+                <div class="card__img">
+                  <img src="img/doctor.jpg" alt="doctor" />
+                </div>
+                <div class="card__text">
+                  <h3>Програми охорони здоров’я</h3>
+                  <p>
+                    Ми допомогаємо літнім людям адаптуватися для реалій життя
+                    під час війни. Для цього ми надаємо грошову допомоги для
+                    отримання медичних послуг та ваучери, для обміну на
+                    медикаменти в аптеках.
+                  </p>
+                </div>
+                <a href="#" class="btn btn--black card__btn">Детальніше</a>
+              </li>
+              <li class="card card--scope scope__card">
+                <div class="card__img">
+                  <img src="img/scope-2.jpg" alt="people" />
+                </div>
+                <div class="card__text">
+                  <h3>Робота з дітьми, молоддю та сім’ями</h3>
+                  <p>
+                    Надаємо дітям доступ до безпечного, інклюзивного та
+                    сприятливого середовища й необхідних послуг для розвитку та
+                    навчання. Ми допомогаємо маленьким українцям сформуюти
+                    ставлення, поведінку та фізичне й психічне благополуччя.
+                  </p>
+                </div>
+                <a href="#" class="btn btn--black card__btn">Детальніше</a>
+              </li>
+              <li class="card card--scope scope__card">
+                <div class="card__img">
+                  <img src="img/scope-3.jpg" alt="disabled girl" />
+                </div>
+                <div class="card__text">
+                  <h3>Допомога людям з інвалідністю</h3>
+                  <p>
+                    Під опікою нашого фонду знаходяться літні люди з
+                    інвалідністю, які потребують фінансової та моральної опори.
+                    Наш фонд надає їм адресну та соціально-психологічну
+                    підтримку, допомагаючи адаптуватися до реалій сучасного
+                    життя.
+                  </p>
+                </div>
+                <a href="#" class="btn btn--black card__btn">Детальніше</a>
+              </li>
+              <li class="card card--scope scope__card">
+                <div class="card__img">
+                  <img src="img/scope-4.jpg" alt="people" />
+                </div>
+                <div class="card__text">
+                  <h3>Гуманітарні програми</h3>
+                  <p>
+                    Наш фонд допомогає переселенцям, учасникам бойових дій,
+                    стихійних лих та постраждалим від війни людям. Ми надаємо їм
+                    готівкові гранти, продуктови, гігієнічні набори та
+                    медикаменти, допомагаємо з працевлаштуванням й
+                    перепідготовкую на інші спеціальності.
+                  </p>
+                </div>
+                <a href="#" class="btn btn--black card__btn">Детальніше</a>
+              </li>
+              <li class="card card--scope scope__card">
+                <div class="card__img">
+                  <img src="img/scope-5.jpg" alt="people" />
+                </div>
+                <div class="card__text">
+                  <h3>Розбудови громад</h3>
+                  <p>
+                    Фонд сприяє стабілізації та соціальній згуртованості в
+                    українському суспільстві. Для цього ми організовуємо групові
+                    психологічні консультаціїї, групи самодопомоги, живі
+                    бібліотеки, кругли столі та інші види дискусій.
+                  </p>
+                </div>
+                <a href="#" class="btn btn--black card__btn">Детальніше</a>
+              </li>
+              <li class="card card--scope scope__card">
+                <div class="card__img">
+                  <img src="img/scope-6.jpg" alt="hold money" />
+                </div>
+                <div class="card__text">
+                  <h3>Благодійні акції</h3>
+                  <p>
+                    Ми допомогаємо привернути увагу суспільства до проблем
+                    окремих груп населення, збираємо кошти для потреб дітей,
+                    літніх людей та тим, кому потрібна фінансова чи моральна
+                    допомога.
+                  </p>
+                </div>
+                <a href="#" class="btn btn--black card__btn">Детальніше</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="founder">
+        <div class="founder__wrapper">
+          <div class="container founder__container">
+            <div class="founder__info">
+              <h2 class="title founder__title">Засновник фонду</h2>
+              <div class="founder__img founder__img--mobile">
+                <img src="img/neroba.jpg" alt="Andriy Neroba" />
+              </div>
+              <p class="text-1 founder__text">
+                Питання підзвітності та прозорості для нас — украй важливе.
+                Щорічно ми проходимо міжнародну фінансову перевірку, напевно, за
+                найсуворішими вимогами: аудит усієї організації, всього бюджету.
+                На додачу до цього — за ключовими нашими програмами ми проходимо
+                іноді спеціальні аудити. Питання підзвітності та прозорості для
+                нас — украй важливе.
+              </p>
+              <div class="founder__bottom">
+                <a href="#" class="btn founder__btn">Засновники</a>
+                <div class="founder__about">
+                  <h3 class="title-2 founder__name">Андрій Нероба</h3>
+                  <p class="text-2 text--grey">
+                    <span class="founder__special">Засновник фонду</span>
+                    «Час чистого довкілля»
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="founder__img">
+              <img src="img/neroba.jpg" alt="Andriy Neroba" />
+            </div>
+            <div class="founder__logo">
+              <img src="img/logo-min.svg" alt="logo" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery">
+        <div class="container swiper swiperGallery">
+          <div class="gallery__head">
+            <h2 class="title">Галерея</h2>
+            <a href="#" class="btn gallery__btn">Всі світлини</a>
+          </div>
+
+          <div class="swiper-wrapper gallery__slider">
+            <div class="swiper-slide gallery__photo">
+              <img src="img/gallery-1.jpg" alt="gallery photo" />
+            </div>
+            <div class="swiper-slide gallery__photo">
+              <img src="img/gallery-2.jpg" alt="gallery photo" />
+            </div>
+            <div class="swiper-slide gallery__photo">
+              <img src="img/gallery-3.jpg" alt="gallery photo" />
+            </div>
+            <div class="swiper-slide gallery__photo">
+              <img src="img/gallery-4.jpg" alt="gallery photo" />
+            </div>
+            <div class="swiper-slide gallery__photo">
+              <img src="img/people-2.jpg" alt="gallery photo" />
+            </div>
+            <div class="swiper-slide gallery__photo">
+              <img src="img/people-3.jpg" alt="gallery photo" />
+            </div>
+          </div>
+
+          <div class="scrollbar">
+            <div class="scrollbar__drag"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="partner">
+        <div class="container partner__container">
+          <div class="partner__head">
+            <h2 class="title">Наші друзі та партнери</h2>
+            <a href="#" class="btn partner__btn">Всі партнери</a>
+          </div>
+          <div class="partner__grid">
+            <div class="partner__img">
+              <img src="img/partner-1.png" alt="logo" />
+            </div>
+            <div class="partner__img">
+              <img src="img/partner-2.png" alt="logo" />
+            </div>
+            <div class="partner__img">
+              <img src="img/partner-3.png" alt="logo" />
+            </div>
+            <div class="partner__img">
+              <img src="img/partner-4.png" alt="logo" />
+            </div>
+            <div class="partner__img">
+              <img src="img/partner-5.png" alt="logo" />
+            </div>
+            <div class="partner__img">
+              <img src="img/partner-6.png" alt="logo" />
+            </div>
+          </div>
+          <a href="#" class="btn partner__btn partner__btn--mobile"
+            >Всі партнери</a
+          >
+          <div class="partner__logo">
+            <img src="img/logo-min.svg" alt="logo" />
+          </div>
+        </div>
+      </section>
+
+      <section class="docs">
+        <div class="container docs__container swiper swiperDocs">
+          <div class="docs__head">
+            <h2 class="title">Наші друзі та партнери</h2>
+            <a href="#" class="btn docs__btn">Всі документи</a>
+          </div>
+
+          <div class="swiper-wrapper docs__grid">
+            <div class="swiper-slide docs__img">
+              <img src="img/document-1.jpg" alt="document" />
+            </div>
+            <div class="swiper-slide docs__img">
+              <img src="img/document-2.jpg" alt="document" />
+            </div>
+            <div class="swiper-slide docs__img">
+              <img src="img/document-3.jpg" alt="document" />
+            </div>
+            <div class="swiper-slide docs__img">
+              <img src="img/document-4.jpg" alt="document" />
+            </div>
+          </div>
+
+          <div class="scrollbar">
+            <div class="scrollbar__drag"></div>
+          </div>
+
+          <a href="#" class="btn docs__btn docs__btn--mobile">Всі документи</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="container">
+          <div class="footer__top">
+            <div class="footer__box">
+              <a href="index.html" class="logo">
+                <img src="img/logo.svg" class="logo__desktop" alt="logo" />
+                <img src="img/logo-min.svg" class="logo__mobile" alt="logo" />
+              </a>
+              <button class="btn btn--black footer__btn">
+                Підтримати фонд
+              </button>
+            </div>
+            <div class="footer__block">
+              <h4>Про нас</h4>
+              <ul class="footer__list">
+                <li>
+                  <a href="#">Засновники</a>
+                </li>
+                <li>
+                  <a href="#">Наша команда</a>
+                </li>
+                <li>
+                  <a href="#">Наші партнери</a>
+                </li>
+                <li>
+                  <a href="#">Контакти</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__block">
+              <h4>Що ми робимо</h4>
+              <div class="footer__inner">
+                <ul class="footer__list">
+                  <li>
+                    <a href="#">Програми охорони здоров’я</a>
+                  </li>
+                  <li>
+                    <a href="#">Робота з дітьми, молоддю та сім’ями</a>
+                  </li>
+                  <li>
+                    <a href="#">Допомога людям з інвалідністю</a>
+                  </li>
+                </ul>
+                <ul class="footer__list">
+                  <li>
+                    <a href="#">Гуматінарні програми</a>
+                  </li>
+                  <li>
+                    <a href="#">Розбудова громад</a>
+                  </li>
+                  <li>
+                    <a href="#">Благодійні акції</a>
+                  </li>
+                  <li>
+                    <a href="#">Звіти</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="footer__bottom">
+            <p>© БО “Час чистого довкілля”</p>
+            <p>2022</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
